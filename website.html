@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moderator Panel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #ff4444;
+            margin-bottom: 10px;
+        }
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            background: #1e1e1e;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 12px rgba(255, 68, 68, 0.4);
+        }
+        .button-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .button {
+            display: inline-block;
+            padding: 14px;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+            background: #ff4444;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .button:hover {
+            background: #cc0000;
+        }
+        .button:nth-child(odd) {
+            background: #ff6600;
+        }
+        .button:nth-child(odd):hover {
+            background: #cc5200;
+        }
+        .status-bar {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #bbb;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Moderator Panel</h1>
+        <p>Manage users, check logs, and maintain community standards.</p>
+
+        <div class="button-grid">
+            <a class="button" href="https://bot-logs.vercel.app/" target="_blank">View Logs</a>
+            <a class="button" href="#">Ban User</a>
+            <a class="button" href="#">Kick User</a>
+            <a class="button" href="#">Mute User</a>
+            <a class="button" href="#">Unban User</a>
+            <a class="button" href="#">Warn User</a>
+            <a class="button" href="#">Review Reports</a>
+            <a class="button" href="#">Clear Chat</a>
+        </div>
+
+        <div class="status-bar">
+            Logged in as: <strong>Moderator</strong> | Active Cases: <strong>3</strong>
+        </div>
+    </div>
+
+</body>
+</html>
